@@ -1,0 +1,11 @@
+(** @canonical Lsystems.Examples *)
+module Examples = Lsystems__Examples
+
+(** @canonical Lsystems.Parser *)
+module Parser = Lsystems__Parser
+
+(** @canonical Lsystems.Systems *)
+module Systems = Lsystems__Systems
+
+(** @canonical Lsystems.Turtle *)
+module Turtle = Lsystems__Turtle

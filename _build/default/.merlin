@@ -1,0 +1,6 @@
+B /usr/lib/ocaml
+B _build/default/.lsystems.objs
+B _build/default/.main.eobjs
+S /usr/lib/ocaml
+S .
+FLG -open Lsystems -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33 -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-26-32-33
