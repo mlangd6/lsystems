@@ -1,4 +1,0 @@
-# dune exec -- ./main.exe examples/br1.sys
-# OCAMLPARAM: unset
-$ /usr/bin/nproc > /tmp/dune4ebeb0.output 2> /dev/null
-$ /usr/bin/ocamlc.opt -config > /tmp/dune9e5870.output
