@@ -1,5 +1,6 @@
 Projet PF5 2020 : L-systèmes
 ============================
+Projet de L3 dans le cadre d'un cours de programmation fonctionnelle.
 
 ## Modalités de rendu et d'évaluation
 
