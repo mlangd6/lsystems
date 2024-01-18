@@ -1,51 +1,49 @@
-Projet PF5 2020 : L-systèmes
-============================
-Projet de L3 dans le cadre d'un cours de programmation fonctionnelle.
+Project PF5 2020: L-systems
+===========================
+L3 project within the scope of a functional programming course.
 
-## Modalités de rendu et d'évaluation
+## Submission and Evaluation Guidelines
 
-Voir [CONSIGNES.md](CONSIGNES.md)
+See [CONSIGNES.md](CONSIGNES.md)
 
-## Prérequis à installer
+## Prerequisites to Install
 
-Voir [INSTALL.md](../INSTALL.md)
+See [INSTALL.md](../INSTALL.md)
 
-  - ocaml évidemment
-  - dune et make sont fortement conseillés
-  - bibliothèque graphics si elle ne vient pas déjà avec ocaml
+  - ocaml, of course
+  - dune and make are highly recommended
+  - graphics library if not already included with ocaml
 
-## Compilation et lancement
+## Compilation and Execution
 
-Par défaut, `make` est seulement utilisé pour abréger les commandes `dune` (voir `Makefile` pour plus de détails):
+By default, `make` is used to abbreviate the `dune` commands (see `Makefile` for more details):
 
-  - `make` sans argument lancera la compilation `dune` de `main.exe`,
-    c'est-à-dire votre programme en code natif.
+  - `make` without arguments will compile `main.exe` using `dune`,
+    which is your program in native code.
 
-  - `make byte` compilera si besoin en bytecode, utile pour faire
-    tourner votre code dans un toplevel OCaml, voir `lsystems.top`.
+  - `make byte` will compile to bytecode if necessary, useful for
+    running your code in an OCaml toplevel, see `lsystems.top`.
 
-  - `make clean` pour effacer le répertoire provisoire `_build` 
-    produit par `dune` lors de ses compilations.
+  - `make clean` to remove the temporary `_build` directory
+    produced by `dune` during its compilations.
 
-Enfin pour lancer votre programme: `./run arg1 arg2 ...`
+Finally, to run your program: `./run arg1 arg2 ...`
 
-## Tests en mode interactif sous emacs
+## Interactive Testing in emacs
 
-Votre programme doit avoir été compilé par `make byte`. Il faut bien sûr avoir installé `emacs`, 
-ainsi qu'un mode ocaml pour `emacs`,  par exemple `tuareg-mode`.
+Your program must have been compiled using `make byte`. You should have `emacs` installed,
+as well as an OCaml mode for `emacs`, such as `tuareg-mode`.
   
-  - Dans un fichier `start.ml` extérieur au répertoire du projet, par exemple
-    au dessus du répertoire `projet`, recopiez le contenu de `lsystems.top`
-    sans sa première directive  (`#ocaml init`). Ajoutez aux chemins d'accès
-    des directives en `#directory` les préfixes nécessaires pour accéder aux
-    mêmes répertoires (par exemple `projet/` si vous êtes au dessus de `projet`).
+  - In an external file `start.ml` outside the project directory, for example
+    above the `projet` directory, copy the contents of `lsystems.top`
+    without its first directive (`#ocaml init`). Add to the `#directory` directives
+    the necessary prefixes to access the same directories (for example `projet/`
+    if you are above `projet`).
 
-  - Dans le même répertoire, ouvrez sous `emacs` votre fichier de tests. Faites-le
-    commencer par `#use "start.ml;;"`. Evaluez-simplement cette directive, ce qui
-    lancera l'interpréteur : vous pourrez ensuite effectuer vos tests. 
+  - In the same directory, open your test file under `emacs`. Start it with `#use "start.ml;;"`.
+    Simply evaluate this directive, which will launch the interpreter: you can then perform your tests.
 
-En cas de recompilation du programme (toujours par `make byte`), il vous
-faudra interrompre l'interpréteur par la directive `#quit;;` puis le relancer
-en réévaluant `#use "start.ml;;"`.
-
+If the program is recompiled (always using `make byte`), you
+will need to interrupt the interpreter with the `#quit;;` directive and then restart it
+by reevaluating `#use "start.ml;;"`.
   
