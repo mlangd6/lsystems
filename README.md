@@ -1,6 +1,6 @@
-Project PF5 2020: L-systems
+Project Functionnal Programming 2020: L-systems
 ===========================
-L3 project within the scope of a functional programming course.
+This project was undertaken as part of my final year, in Licence 3 (equivalent to the last year of Bachelor in France) at University Paris Diderot within the scope of a functional programming course.
 
 ## Submission and Evaluation Guidelines
 
